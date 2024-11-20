@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+}
+
+h3 {
+  margin: 35px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+
+small {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.fa-heart {
+  color: rgb(236, 4, 194);
+}
+
+.loveMe {
+  height: 440px;
+  width: 300px;
+  background: url(images/IMG_20190728_135520.jpg) no-repeat center center/cover;
+  margin: auto;
+  cursor: pointer;
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.loveMe .fa-heart {
+  position: absolute;
+  animation: grow 0.6s linear;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}
